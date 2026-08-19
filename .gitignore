@@ -4,6 +4,6 @@ dist/
 .env
 .env.*
 *.log
+geartrekco-hostinger*.zip
 .DS_Store
 Thumbs.db
-
