@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" role="img" aria-labelledby="title desc">
+  <title id="title">GEARTREKCO</title>
+  <desc id="desc">GEARTREKCO outdoor editorial logo with mountain and trail symbol</desc>
+  <g transform="translate(4 4)">
+    <rect width="64" height="64" rx="16" fill="#35422f"/>
+    <path d="M10 40 26.5 17l8.3 11.1L41 20l13 20H42.8l-8-11-4.2 5.8L27 30 20 40Z" fill="#f3f0e8"/>
+    <path d="M51 42H36.5c-7 0-11 2.7-11 6.7 0 3.7 3.7 6.2 9.2 6.2 4.8 0 8.1-1.8 10.1-4.7h-9.6" fill="none" stroke="#e46535" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#172019" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="1.5">
+    <text x="84" y="45">GEAR</text>
+    <text x="166" y="45" fill="#506044">TREK</text>
+    <text x="254" y="45">CO</text>
+  </g>
+  <text x="85" y="62" fill="#6a716a" font-family="Arial, Helvetica, sans-serif" font-size="7.5" font-weight="700" letter-spacing="2.3">OUTDOOR GEAR EDITORIAL</text>
+</svg>

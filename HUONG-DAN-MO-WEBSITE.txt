@@ -1,0 +1,11 @@
+CACH MO WEBSITE GEARTREKCO
+=========================
+
+1. Nham dup vao file "Mo website.cmd".
+2. Cho vai giay, website se tu dong mo trong trinh duyet.
+3. Giu cua so mau den dang chay trong khi xem website.
+4. Khi xem xong, dong cua so mau den de tat may chu xem thu.
+
+Luu y:
+Khong nham dup truc tiep vao index.html trong thu muc dist.
+Website React can duoc mo qua may chu cuc bo de JavaScript va cac duong dan hoat dong dung.

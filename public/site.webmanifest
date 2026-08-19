@@ -1,0 +1,10 @@
+{
+  "name": "GEARTREKCO",
+  "short_name": "GEARTREKCO",
+  "description": "Independent outdoor gear reviews and buying guides.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f0e8",
+  "theme_color": "#35422f",
+  "icons": [{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
