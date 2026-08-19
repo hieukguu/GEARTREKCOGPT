@@ -166,6 +166,44 @@
   font-size: 12px !important;
 }
 
+/* Contact page: reference structure, GEARTREKCO visual language. */
+.contact-hero { padding: 96px 0 88px; background: var(--olive-dark); color: white; }
+.contact-hero h1 { max-width: 900px; margin: 0; font-family: var(--serif); font-size: clamp(62px, 8vw, 108px); font-weight: 500; line-height: .92; letter-spacing: -.045em; }
+.contact-hero p { max-width: 670px; margin: 28px 0 0; color: #e3e8df; font-size: 19px; line-height: 1.65; }
+.contact-section { padding: 104px 0 120px; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(64px, 8vw, 124px); align-items: start; }
+.contact-details, .contact-form-wrap { min-width: 0; }
+.contact-details h2, .contact-form-wrap h2 { max-width: 12ch; margin: 0 0 18px; font-family: var(--serif); font-size: clamp(38px, 4vw, 54px); font-weight: 500; line-height: 1.04; letter-spacing: -.025em; text-wrap: balance; }
+.contact-details > p { max-width: 50ch; margin: 0; color: var(--muted); }
+.contact-list { margin-top: 40px; border-top: 1px solid var(--line); }
+.contact-list > a, .contact-list > div { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+.contact-list svg { width: 22px; color: var(--olive); }
+.contact-list span, .contact-list small, .contact-list strong { display: block; }
+.contact-list small { margin-bottom: 4px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+.contact-list strong { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.5; }
+.contact-list a:hover strong { color: var(--orange); }
+.contact-note { display: flex; gap: 13px; margin-top: 30px; padding: 18px; background: var(--canvas); border: 1px solid var(--line); }
+.contact-note svg { flex: 0 0 auto; color: var(--olive); }
+.contact-note p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.contact-form-wrap { padding: clamp(30px, 4vw, 52px); background: var(--canvas); border: 1px solid var(--line); }
+.contact-form { display: grid; gap: 22px; margin-top: 34px; }
+.form-row { display: grid; gap: 8px; }
+.form-row label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.form-row label span { color: var(--orange); }
+.form-row input, .form-row select, .form-row textarea { width: 100%; min-height: 52px; padding: 13px 15px; border: 1px solid #bfc3ba; border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; transition: border-color .2s, box-shadow .2s; }
+.form-row textarea { min-height: 168px; resize: vertical; }
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus { outline: 0; border-color: var(--olive); box-shadow: 0 0 0 3px rgba(53, 66, 47, .15); }
+.contact-submit { width: max-content; min-width: 180px; border: 0; }
+.form-privacy, .form-status { margin: 0; font-size: 12px; line-height: 1.6; }
+.form-privacy { color: var(--muted); }
+.form-privacy a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.form-status { display: flex; align-items: center; gap: 8px; color: var(--olive); font-weight: 700; }
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 72px; }
+  .contact-details { max-width: 680px; }
+}
+
 @media (max-width: 700px) {
   .article-layout { width: calc(100% - 32px); }
   .article-content,
@@ -185,4 +223,12 @@
 
   .article-content h2 { max-width: none; }
   .source-list li { flex-direction: column; gap: 4px; }
+  .contact-hero { padding: 72px 0 64px; }
+  .contact-hero h1 { font-size: 58px; }
+  .contact-hero p { font-size: 17px; }
+  .contact-section { padding: 72px 0 84px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 64px; }
+  .contact-details h2, .contact-form-wrap h2 { max-width: none; font-size: 40px; }
+  .contact-form-wrap { padding: 24px 18px; }
+  .contact-submit { width: 100%; }
 }
