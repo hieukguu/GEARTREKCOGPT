@@ -33,7 +33,12 @@ const base = [
   ['best-camping-coolers','Best Camping Coolers','Camping','cooking'],
   ['best-lightweight-tents-backpacking','Best Lightweight Tents for Backpacking','Backpacking','backpacking'],
   ['best-hiking-gps-devices','Best Hiking GPS Devices','Outdoor Gear','trekking'],
-  ['best-outdoor-gear-beginners','Best Outdoor Gear for Beginners','Buying Guides','gear']
+  ['best-outdoor-gear-beginners','Best Outdoor Gear for Beginners','Buying Guides','gear'],
+  ['best-hiking-rain-jackets','Best Hiking Rain Jackets for Wet Trails','Apparel','rain'],
+  ['best-hydration-bladders-hiking','Best Hydration Bladders for Hiking','Hiking','hydration'],
+  ['best-satellite-messengers-hiking','Best Satellite Messengers for Hiking','Outdoor Gear','messengers'],
+  ['best-backpacking-quilts','Best Backpacking Quilts for Lightweight Sleep Systems','Backpacking','quilts'],
+  ['best-bear-canisters-backpacking','Best Bear Canisters for Backpacking','Backpacking','bear']
 ];
 
 // One distinct editorial image per guide. Keeping this list separate prevents
@@ -58,7 +63,12 @@ const articleImages = [
   'https://images.unsplash.com/photo-1563299796-17596ed6b017?auto=format&fit=crop&w=1800&q=84',
   'https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1800&q=84',
   'https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=84',
-  'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1800&q=84'
+  'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1800&q=84',
+  'https://images.unsplash.com/photo-1517825738774-7de9363ef735?auto=format&fit=crop&w=1800&q=84',
+  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=84',
+  'https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=84',
+  'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=1800&q=84',
+  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=84'
 ];
 
 const research = [
@@ -81,7 +91,12 @@ const research = [
   {f:['measured insulation performance','capacity after accounting for ice','drainage, handling, and empty weight'],s:[['GearLab cooler guide','https://www.outdoorgearlab.com/topics/camping-and-hiking/best-cooler'],['REI cooler selection guide','https://www.rei.com/learn/expert-advice/coolers.html']]},
   {f:['minimum trail weight','space-to-weight efficiency','stormworthiness for the intended season'],s:[['GearLab ultralight tent guide','https://www.outdoorgearlab.com/topics/camping-and-hiking/best-ultralight-tent'],['REI backpacking tent guide','https://www.rei.com/learn/expert-advice/backpacking-tent.html']]},
   {f:['navigation interface and map ecosystem','battery life with tracking enabled','satellite messaging and subscription requirements'],s:[['GearLab handheld GPS guide','https://www.outdoorgearlab.com/topics/camping-and-hiking/best-handheld-gps'],['REI GPS receiver guide','https://www.rei.com/learn/expert-advice/gps-receivers.html']]},
-  {f:['safety and shelter before convenience','fit and skills before premium upgrades','a coherent kit with tested compatibility'],s:[['REI ten essentials guide','https://www.rei.com/learn/expert-advice/ten-essentials.html'],['Hiking Guy gear guide','https://hikingguy.com/best-hiking-gear/']]}
+  {f:['safety and shelter before convenience','fit and skills before premium upgrades','a coherent kit with tested compatibility'],s:[['REI ten essentials guide','https://www.rei.com/learn/expert-advice/ten-essentials.html'],['Hiking Guy gear guide','https://hikingguy.com/best-hiking-gear/']]},
+  {f:['waterproof construction and seam sealing','breathability and venting options','hood, cuff, and hem adjustment'],s:[['REI rainwear guide','https://www.rei.com/learn/expert-advice/rainwear.html'],['Patagonia shell layering guide','https://www.patagonia.com/guides/outerwear/']]},
+  {f:['reservoir capacity for the route','valve flow and shutoff design','ease of cleaning and drying'],s:[['REI hydration guide','https://www.rei.com/learn/expert-advice/hydration.html'],['Osprey reservoir care','https://www.osprey.com/customer-support/cleaning-water-reservoirs']]},
+  {f:['satellite network and coverage','two-way messaging and SOS workflow','subscription cost and battery life'],s:[['Garmin inReach technology','https://www.garmin.com/en-US/c/outdoor-recreation/satellite-communicators/'],['NOAA personal locator beacon guidance','https://www.sarsat.noaa.gov/']]},
+  {f:['temperature rating and insulation','sleeping-pad attachment and draft control','weight, packed size, and fit'],s:[['REI sleeping bag guide','https://www.rei.com/learn/expert-advice/sleeping-bag.html'],['Therm-a-Rest quilt guide','https://www.thermarest.com/blog/sleeping-bag-vs-quilt/']]},
+  {f:['food capacity for trip length','approval for the destination','opening, carrying, and packing practicality'],s:[['National Park Service food storage guidance','https://www.nps.gov/articles/bearsafetyfood.htm'],['BearVault approved canisters','https://bearvault.com/canister-approval/']]}
 ];
 
 export const heroImage = 'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2200&q=86';
@@ -98,8 +113,23 @@ const productSets = {
   footwear: ['Hoka Anacapa 2 Low GTX','Merrell Moab 3','Salomon X Ultra 4 Mid GTX'],
   chairs: ['Helinox Chair One','REI Co-op Camp X','GCI Outdoor KickBack Rocker'],
   power: ['EcoFlow River 2 Pro','Jackery Explorer 500','Bluetti AC70'],
-  gear: ['Black Diamond Spot 400','Sawyer Squeeze','Osprey Talon 22']
+  gear: ['Black Diamond Spot 400','Sawyer Squeeze','Osprey Talon 22'],
+  rain: ['Patagonia Torrentshell 3L','Outdoor Research Foray II','Marmot PreCip Eco'],
+  hydration: ['Osprey Hydraulics 3L','CamelBak Crux 3L','Gregory 3D Hydro 3L'],
+  messengers: ['Garmin inReach Mini 2','ZOLEO Satellite Communicator','SPOT X'],
+  quilts: ['Enlightened Equipment Revelation','Therm-a-Rest Vesper 20','NEMO Coda 10/20'],
+  bear: ['BearVault BV500 Journey','Garcia Backpacker’s Cache','Ursack Major XL']
 };
+
+// Amazon search URLs keep availability and live retailer pricing current without
+// inventing an affiliate tracking ID. A verified affiliate URL can replace any
+// entry later without changing the article components.
+const commerceProduct = name => ({
+  name,
+  price: 'Check current price',
+  retailer: 'Amazon',
+  url: `https://www.amazon.com/s?k=${encodeURIComponent(name)}`
+});
 
 const dek = {
   Camping: 'Comfortable, dependable equipment for better weekends at camp—without hauling more than you need.',
@@ -108,11 +138,12 @@ const dek = {
   Trekking: 'Supportive, durable gear for repeated miles and changing terrain.',
   'Camp Cooking': 'Efficient, packable cooking gear that earns its space in your camp box or backpack.',
   'Outdoor Gear': 'Useful outdoor technology and essentials with clear strengths, limits, and value.',
+  Apparel: 'Weather-ready layers chosen for protection, breathability, fit, and practical trail use.',
   'Buying Guides': 'A practical starter kit that puts safety and function before unnecessary upgrades.'
 };
 
 export const articles = base.map((a, i) => ({
-  slug:a[0], title:a[1], category:a[2], image:articleImages[i], products:productSets[a[3]],
+  slug:a[0], title:a[1], category:a[2], image:articleImages[i], products:productSets[a[3]].map(commerceProduct),
   excerpt:dek[a[2]], date:`${['May','June','July','August'][i%4]} ${5+i}, 2026`, read:`${12+(i%7)} min read`,
   featured:i<4, rating:(4.5+(i%4)*.1).toFixed(1), buyingFactors:research[i].f, sources:research[i].s
 }));
