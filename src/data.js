@@ -131,6 +131,27 @@ const commerceProduct = name => ({
   url: `https://www.amazon.com/s?k=${encodeURIComponent(name)}`
 });
 
+const featuredKetlGuide = {
+  slug: 'ketl-mtn-gear-worth-packing',
+  path: '/featured/ketl-mtn-gear/',
+  title: 'The KETL Mtn Gear Worth Packing',
+  category: 'Apparel',
+  image: 'https://cdn.shopify.com/s/files/1/0114/1335/6610/files/KETL-Nofry-Sun-Hoodie-Cloud-PDP-3.jpg?v=1778606561',
+  products: [
+    {name:'KETL NoFry Sun Hoodie',price:'$69',retailer:'KETL Mtn',url:'https://ketlmtn.com/products/nofry-sunhoodie?ref=mboxtanr'},
+    {name:'KETL Vent Lightweight Active Pants',price:'$94',retailer:'KETL Mtn',url:'https://ketlmtn.com/products/ketl-mtn-vent-joggerish-lightweight-travel-pants?ref=mboxtanr'},
+    {name:'KETL Tomfoolery Chino Travel Pants',price:'$99',retailer:'KETL Mtn',url:'https://ketlmtn.com/products/tomfoolery-pant?ref=mboxtanr'}
+  ],
+  excerpt: 'A focused edit of versatile KETL Mtn layers for warm-weather trails, travel, and everyday adventure.',
+  date: 'September 8, 2026',
+  read: '8 min read',
+  featured: true,
+  partner: true,
+  rating: '4.7',
+  buyingFactors: ['warm-weather comfort','versatility across trail and travel','fit, storage, and packability'],
+  sources: [['KETL Mtn product specifications','https://ketlmtn.com/collections/mens?ref=mboxtanr']]
+};
+
 const dek = {
   Camping: 'Comfortable, dependable equipment for better weekends at camp—without hauling more than you need.',
   Backpacking: 'Trail-ready options judged by weight, usable comfort, packed size, and practical value.',
@@ -142,11 +163,11 @@ const dek = {
   'Buying Guides': 'A practical starter kit that puts safety and function before unnecessary upgrades.'
 };
 
-export const articles = base.map((a, i) => ({
+export const articles = [featuredKetlGuide, ...base.map((a, i) => ({
   slug:a[0], title:a[1], category:a[2], image:articleImages[i], products:productSets[a[3]].map(commerceProduct),
   excerpt:dek[a[2]], date:`${['May','June','July','August'][i%4]} ${5+i}, 2026`, read:`${12+(i%7)} min read`,
   featured:i<4, rating:(4.5+(i%4)*.1).toFixed(1), buyingFactors:research[i].f, sources:research[i].s
-}));
+}))];
 
 export const categories = [
   {name:'Camping',slug:'camping',image:images.tents,description:'Tents, sleeping bags, camp furniture, lighting, coolers and cooking gear.'},
