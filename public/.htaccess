@@ -3,6 +3,9 @@ RewriteEngine On
 
 AddType application/manifest+json .webmanifest
 
+# Keep the original campaign URL working while serving a Hostinger-safe file.
+RewriteRule ^featured/ketl-mtn-gear/?$ ketl-mtn-gear.html [L]
+
 # Preserve real files and directories such as assets, robots.txt and sitemap.xml.
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d

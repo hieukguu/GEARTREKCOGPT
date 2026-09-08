@@ -133,7 +133,7 @@ const commerceProduct = name => ({
 
 const featuredKetlGuide = {
   slug: 'ketl-mtn-gear-worth-packing',
-  path: '/featured/ketl-mtn-gear/',
+  path: '/ketl-mtn-gear.html',
   title: 'The KETL Mtn Gear Worth Packing',
   category: 'Apparel',
   image: 'https://cdn.shopify.com/s/files/1/0114/1335/6610/files/KETL-Nofry-Sun-Hoodie-Cloud-PDP-3.jpg?v=1778606561',
