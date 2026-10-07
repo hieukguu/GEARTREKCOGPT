@@ -152,6 +152,86 @@ const featuredKetlGuide = {
   sources: [['KETL Mtn product specifications','https://ketlmtn.com/collections/mens?ref=mboxtanr']]
 };
 
+const newReviews = [
+  {
+    slug:'hoka-speedgoat-6-review', title:'HOKA Speedgoat 6 Review: Cushion and Grip for Technical Trails', category:'Hiking',
+    image:'/products/2026/hoka-speedgoat-6.jpg', excerpt:'A close look at HOKA’s high-cushion trail shoe for rocky climbs, long descents, and technical day hikes.',
+    products:[{name:'HOKA Speedgoat 6',price:'Check current price',retailer:'HOKA',url:'https://www.hoka.com/en/us/mens-trail/speedgoat-6/1147791.html',image:'/products/2026/hoka-speedgoat-6.jpg'}],
+    buyingFactors:['traction on loose and technical terrain','cushioning over long mileage','fit, stability, and toe protection'],
+    sources:[['HOKA Speedgoat 6 product specifications','https://www.hoka.com/en/us/mens-trail/speedgoat-6/1147791.html']]
+  },
+  {
+    slug:'salomon-speedcross-6-review', title:'Salomon Speedcross 6 Review: Built for Mud and Soft Ground', category:'Hiking',
+    image:'/products/2026/salomon-speedcross-6.png', excerpt:'Aggressive lugs, a locked-in upper, and a clear bias toward soft, muddy trails define this iconic Salomon.',
+    products:[{name:'Salomon Speedcross 6',price:'$150',retailer:'Salomon',url:'https://www.salomon.com/en-us/product/speedcross-6-lg9212/L47811000',image:'/products/2026/salomon-speedcross-6.png'}],
+    buyingFactors:['mud traction and lug depth','secure fit on steep terrain','cushioning, drop, and everyday versatility'],
+    sources:[['Salomon Speedcross 6 product specifications','https://www.salomon.com/en-us/product/speedcross-6-lg9212/L47811000']]
+  },
+  {
+    slug:'garmin-inreach-mini-2-review', title:'Garmin inReach Mini 2 Review: Off-Grid Messaging Without the Bulk', category:'Outdoor Gear',
+    image:'/products/2026/garmin-inreach-mini-2.jpg', excerpt:'A compact satellite communicator for hikers who need two-way messaging, SOS capability, and route tracking beyond cell service.',
+    products:[{name:'Garmin inReach Mini 2',price:'Check current price',retailer:'Garmin',url:'https://www.garmin.com/en-US/p/765374',image:'/products/2026/garmin-inreach-mini-2.jpg'}],
+    buyingFactors:['satellite messaging and SOS workflow','battery life with tracking active','subscription cost and phone dependence'],
+    sources:[['Garmin inReach Mini 2 product specifications','https://www.garmin.com/en-US/p/765374']]
+  },
+  {
+    slug:'nemo-fillo-pillow-review', title:'NEMO Fillo Review: A Camping Pillow That Feels Less Inflatable', category:'Camping',
+    image:'/products/2026/nemo-fillo.jpg', excerpt:'Foam over an adjustable air cell gives the Fillo a softer, quieter feel than most compact camping pillows.',
+    products:[{name:'NEMO Fillo Pillow',price:'Check current price',retailer:'NEMO Equipment',url:'https://www.nemoequipment.com/products/fillo-backpacking-pillow',image:'/products/2026/nemo-fillo.jpg'}],
+    buyingFactors:['support and surface comfort','packed volume and trail weight','valve control and washable materials'],
+    sources:[['NEMO Fillo product specifications','https://www.nemoequipment.com/products/fillo-backpacking-pillow']]
+  },
+  {
+    slug:'outdoor-research-crocodile-gaiters-review', title:'Outdoor Research Crocodile Gaiters Review: Serious Weather Protection', category:'Trekking',
+    image:'/products/2026/outdoor-research-crocodile.png', excerpt:'A durable GORE-TEX gaiter for snow, mud, scree, and the rough conditions where lighter trail gaiters fall short.',
+    products:[{name:'Outdoor Research Crocodile Gaiters',price:'Check current price',retailer:'Outdoor Research',url:'https://www.outdoorresearch.com/products/mens-crocodile-gaiters-322480',image:'/products/2026/outdoor-research-crocodile.png'}],
+    buyingFactors:['waterproof coverage and cuff seal','abrasion resistance around boots','fit, strap durability, and ease of use'],
+    sources:[['Outdoor Research Crocodile Gaiter specifications','https://www.outdoorresearch.com/products/mens-crocodile-gaiters-322480']]
+  },
+  {
+    slug:'darn-tough-hiker-micro-crew-review', title:'Darn Tough Hiker Micro Crew Review: A Dependable Merino Trail Sock', category:'Apparel',
+    image:'/products/2026/darn-tough-hiker.png', excerpt:'A snug merino-blend hiking sock with underfoot cushioning and a reputation for staying put through long trail days.',
+    products:[{name:'Darn Tough Hiker Micro Crew Cushion',price:'Check current price',retailer:'Darn Tough',url:'https://darntough.com/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks',image:'/products/2026/darn-tough-hiker.png'}],
+    buyingFactors:['blister control and secure fit','moisture and temperature management','cushioning, durability, and warranty'],
+    sources:[['Darn Tough Hiker product details','https://darntough.com/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks']]
+  },
+  {
+    slug:'leatherman-signal-review', title:'Leatherman Signal Review: A Multi-Tool Designed Around Camp', category:'Outdoor Gear',
+    image:'/products/2026/leatherman-signal.jpg', excerpt:'The Signal combines familiar pliers and blade functions with a ferro rod, whistle, hammer, and outdoor-focused carry design.',
+    products:[{name:'Leatherman Signal',price:'Check current price',retailer:'Leatherman',url:'https://www.leatherman.com/signal-439.html',image:'/products/2026/leatherman-signal.jpg'}],
+    buyingFactors:['useful tool selection for camp tasks','one-hand access and locking safety','weight, ergonomics, and field maintenance'],
+    sources:[['Leatherman Signal product details','https://www.leatherman.com/signal-439.html']]
+  },
+  {
+    slug:'sea-to-summit-aeros-premium-review', title:'Sea to Summit Aeros Premium Review: Ultralight Sleep Support', category:'Backpacking',
+    image:'/products/2026/sea-to-summit-aeros.jpg', excerpt:'A small-packing inflatable pillow that prioritizes low weight, adjustable firmness, and compatibility with sleeping pads.',
+    products:[{name:'Sea to Summit Aeros Premium Pillow',price:'Check current price',retailer:'Sea to Summit',url:'https://seatosummit.com/products/aeros-pillow-premium',image:'/products/2026/sea-to-summit-aeros.jpg'}],
+    buyingFactors:['head and neck support','packed size and total weight','surface feel, stability, and valve control'],
+    sources:[['Sea to Summit Aeros Premium specifications','https://seatosummit.com/products/aeros-pillow-premium']]
+  },
+  {
+    slug:'patagonia-quandary-pants-review', title:'Patagonia Quandary Pants Review: Trail Mobility Without the Technical Look', category:'Apparel',
+    image:'/products/2026/patagonia-quandary.png', excerpt:'Lightweight stretch, practical pockets, and a clean profile make the Quandary an easy bridge between trail and travel.',
+    products:[{name:'Patagonia Quandary Pants',price:'Check current price',retailer:'Patagonia',url:'https://www.patagonia.com/product/mens-quandary-hiking-pants-regular/55183.html',image:'/products/2026/patagonia-quandary.png'}],
+    buyingFactors:['mobility and fit over long days','drying speed and weather resistance','pocket layout and travel versatility'],
+    sources:[['Patagonia Quandary Pants specifications','https://www.patagonia.com/product/mens-quandary-hiking-pants-regular/55183.html']]
+  },
+  {
+    slug:'eno-doublenest-hammock-review', title:'ENO DoubleNest Review: Roomy, Simple Trail-Side Lounging', category:'Camping',
+    image:'/products/2026/eno-doublenest.jpg', excerpt:'A quick-packing two-person hammock for campsites, parks, and trail breaks—provided you budget for a compatible suspension.',
+    products:[{name:'ENO DoubleNest Hammock',price:'Check current price',retailer:'ENO',url:'https://eaglesnestoutfittersinc.com/products/doublenest-hammock',image:'/products/2026/eno-doublenest.jpg'}],
+    buyingFactors:['comfort and usable width','packed size, weight, and setup','suspension compatibility and tree protection'],
+    sources:[['ENO DoubleNest product specifications','https://eaglesnestoutfittersinc.com/products/doublenest-hammock']]
+  }
+].map((review,index)=>({
+  ...review,
+  productReview:true,
+  date:`October ${7-index}, 2026`,
+  read:`${10+(index%4)} min read`,
+  featured:index<3,
+  rating:(4.8-(index%3)*.1).toFixed(1)
+}));
+
 const dek = {
   Camping: 'Comfortable, dependable equipment for better weekends at camp—without hauling more than you need.',
   Backpacking: 'Trail-ready options judged by weight, usable comfort, packed size, and practical value.',
@@ -163,7 +243,7 @@ const dek = {
   'Buying Guides': 'A practical starter kit that puts safety and function before unnecessary upgrades.'
 };
 
-export const articles = [featuredKetlGuide, ...base.map((a, i) => ({
+export const articles = [featuredKetlGuide, ...newReviews, ...base.map((a, i) => ({
   slug:a[0], title:a[1], category:a[2], image:articleImages[i], products:productSets[a[3]].map(commerceProduct),
   excerpt:dek[a[2]], date:`${['May','June','July','August'][i%4]} ${5+i}, 2026`, read:`${12+(i%7)} min read`,
   featured:i<4, rating:(4.5+(i%4)*.1).toFixed(1), buyingFactors:research[i].f, sources:research[i].s
